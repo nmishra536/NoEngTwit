@@ -1,0 +1,23 @@
+{
+"name": "NoEngTwit",
+"manifest_version": 3,
+"version": "1.0",
+
+"description": "A Google Chrome Extension which allows users to remove all tweets in English from their feed",
+
+"icons": {
+    "128": "noengtwit.png"
+  },
+
+ 
+"content_scripts": [
+   {
+     "matches": ["https://*.twitter.com/*"],
+     "js": ["jquery.js", "noengtwit.js"]
+   }
+ ],
+
+
+"permissions": [
+]
+}
